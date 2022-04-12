@@ -80,7 +80,7 @@ public class TestExecute {
         System.arraycopy(leftHalf, 0, mergeArray, 0, h);
         System.arraycopy(rightHalf, 0, mergeArray, h, h);
 
-        long endGlueArrays =  System.currentTimeMillis() - gluingLeftHalfAndRightHalfStart;
+        long endGlueArrays = System.currentTimeMillis() - gluingLeftHalfAndRightHalfStart;
         long endTime = System.currentTimeMillis() - startTime;
         System.out.println("Glue the left half and the right half time: " + endGlueArrays + " ms.");
         System.out.println("Multithreaded time: " + endTime + " ms.");

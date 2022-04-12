@@ -49,6 +49,7 @@ public class TestNotifyWait {
             try {
                 for (int i = 0; i < 5; i++) {
                     while (currentLetter != 'B') {
+
                         monitorLetter.wait();
                     }
                     System.out.print("B");
@@ -66,6 +67,7 @@ public class TestNotifyWait {
             try {
                 for (int i = 0; i < 5; i++) {
                     while (currentLetter != 'C') {
+
                         monitorLetter.wait();
                     }
                     System.out.print("C");
